@@ -1,0 +1,45 @@
+#sidebar {
+    background: $darkTeal;
+    border: 1rem solid $medTeal;
+    width: 30%;
+    padding: 2rem;
+
+    .sidebar-section {
+        color: #fff;
+        margin-bottom: 2rem;
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 2rem;
+        }
+
+        .section-link {
+            color: #fff;
+            font-size: 14px;
+            display: block;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#carouselExampleIndicators {
+
+    .carousel-indicators {
+        bottom: -4rem;
+
+        li {
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+        }
+    }
+}

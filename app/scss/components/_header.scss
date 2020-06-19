@@ -1,0 +1,66 @@
+#header {
+    margin: 1rem 0;
+    background: $darkTeal;
+    position: relative;
+
+    .header-logo {
+        display: block;
+        padding: 1rem 0;
+        margin-bottom: 20px;
+    }
+
+    .header-nav {
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 8px;
+        background: $darkTeal;
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-toggler {
+            background: #fff;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    background: $brandColor;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-right: 2px;
+
+                    .item-link {
+                        display: block;
+                        color: #fff;
+                        padding: 5px 15px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+
+    .header-nav {
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    #mobile-header-content {
+        width: 100% !important;
+    }
+}

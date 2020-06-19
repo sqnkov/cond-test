@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+
+
+#footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.brand-logo {
+    position: fixed;
+    top: 8.5rem;
+    left: 0;
+}
+
+.dropdown-menu {
+    background: $brandColor;
+
+    .dropdown-item {
+        color: #fff;
+        font-size: 14px;
+        border-bottom: 1px solid #fff;
+
+        &:hover {
+            background: $brandColorDark;
+        }
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+}
+
+.social-share {
+    .share-link {
+        display: inline-block;
+        margin-right: .5rem;
+        margin: .5rem .5rem .5rem 0;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #content,
+    #sidebar {
+        width: 100% !important;
+        min-height: auto !important;
+    }
+}

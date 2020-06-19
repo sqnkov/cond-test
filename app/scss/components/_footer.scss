@@ -1,0 +1,49 @@
+#footer {
+    margin-bottom: 1rem;
+    font-size: 14px;
+
+    .container {
+        background: $brandColor;
+        color: #fff;
+        padding: 1rem;
+    }
+
+    .footer-nav {
+        .nav-item {
+            margin-right: 1rem;
+
+            a {
+                text-decoration: underline;
+                color: #fff;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #footer {
+        margin-top: 2rem;
+    }
+
+    .footer-nav {
+        margin-top: 1rem;
+
+        .nav {
+            .nav-item {
+                display: block;
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}

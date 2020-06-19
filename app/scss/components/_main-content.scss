@@ -1,0 +1,41 @@
+#content,
+#sidebar {
+    min-height: 55vh;
+}
+
+#content {
+    background: $medTeal;
+    border: 1rem solid $brandColor;
+    width: 70%;
+}
+
+.article {
+    color: #fff;
+
+    .article-header {
+        padding: 2rem;
+        border-bottom: .1rem solid black;
+        position: relative;
+
+        .header-title {
+            font-size: 48px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            background: #616F6F;
+        }
+    }
+
+    .article-content {
+        padding: 2rem;
+        font-size: 14px;
+    }
+
+}
